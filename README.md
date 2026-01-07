@@ -31,9 +31,13 @@ Strict application of the criteria defined by *Islamic Finance Guru* and *Mufti 
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/FinanceBro.git](https://github.com/YOUR_USERNAME/FinanceBro.git)
+   git clone https://github.com/ahmedblh7/FinanceBro.git
    cd FinanceBro
 
 python -m venv venv
 venv\Scripts\activate
 streamlit run app.py
+
+git add .
+git commit -m "Description de ce que j'ai changé"
+git push
