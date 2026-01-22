@@ -4,7 +4,7 @@ import pandas as pd
 # =========================================================
 # 🎨 CONFIGURATION & DESIGN SYSTEM (IDENTIQUE À APP.PY)
 # =========================================================
-st.set_page_config(page_title="Stratégies | ETHOS", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Stratégies | Mizan Investments", page_icon="⚖️", layout="wide")
 
 st.markdown("""
 <style>
@@ -33,8 +33,22 @@ st.markdown("""
     .tag-growth { background: rgba(255, 75, 75, 0.15); color: #FF4B4B; border: 1px solid rgba(255, 75, 75, 0.3); }
 
     .kpi-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-    .kpi-table th { text-align: left; color: #6E7687; font-size: 0.85rem; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-    .kpi-table td { padding: 12px 0; color: #C8CDD5; font-size: 0.95rem; border-bottom: 1px solid rgba(255,255,255,0.03); }
+    
+    .kpi-table th { 
+        text-align: left; 
+        color: #6E7687; 
+        font-size: 0.85rem; 
+        padding: 10px 15px; 
+        border-bottom: 1px solid rgba(255,255,255,0.1); 
+    }
+    
+    .kpi-table td { 
+        padding: 12px 15px; 
+        color: #C8CDD5; 
+        font-size: 0.95rem; 
+        border-bottom: 1px solid rgba(255,255,255,0.03); 
+    }
+    
     .kpi-val { font-family: 'Space Grotesk'; font-weight: 600; color: white; }
     
     .quote-box {
@@ -44,52 +58,53 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # =========================================================
-# 📝 CONTENU (HTML FLUSH LEFT FIX)
+# 📝 CONTENU
 # =========================================================
 
 st.markdown("# 📚 Bibliothèque des Stratégies")
-st.markdown("Comprendre les modèles mathématiques derrière l'algorithme.")
+st.markdown("Comprendre les modèles mathématiques derrière l'algorithme Mizan.")
 st.markdown("---")
 
-# --- STRATÉGIE 1: FINANCE BRO ---
+# --- STRATÉGIE 1: MIZAN STRATEGY (V7.6) ---
 st.markdown("""
 <div class="strat-card">
 <div class="strat-header">
-<div class="strat-title">💎 FinanceBro (Quality Income)</div>
+<div class="strat-title">💎 Mizan Strategy (Quality Growth)</div>
 <div class="strat-tag tag-quality">ÉQUILIBRÉ / CASH</div>
 </div>
-<p><strong>Philosophie :</strong> "Le Cash est Roi."</p>
-<p>Cette stratégie est une variante moderne du "Quality Value". Elle ne cherche pas seulement des entreprises pas chères, elle cherche des entreprises qui <em>impriment de l'argent</em> (Cash Flow) et qui ne risquent pas la faillite.</p>
-<div class="quote-box">"Le chiffre d'affaires est une vanité, le profit est une opinion, le cash est une réalité."</div>
+<p><strong>Philosophie :</strong> "La Qualité à Prix Raisonnable."</p>
+<p>Cette stratégie modernisée recherche l'équilibre parfait entre solidité financière et croissance. Elle s'adapte dynamiquement : elle exige un rendement cash élevé pour les entreprises matures, mais tolère un rendement plus faible pour les leaders en forte croissance, à condition que la marge opérationnelle prouve leur supériorité (Moat).</p>
+<div class="quote-box">"Mieux vaut acheter une entreprise merveilleuse à un prix correct qu'une entreprise correcte à un prix merveilleux." (Warren Buffett)</div>
 <table class="kpi-table">
 <thead><tr><th>KPI</th><th>Cible</th><th>Pourquoi ?</th></tr></thead>
 <tbody>
-<tr><td><span class="kpi-val">FCF Yield</span></td><td class="kpi-val">> 5%</td><td>Le vrai rendement cash que l'entreprise met dans votre poche.</td></tr>
-<tr><td><span class="kpi-val">PER (P/E)</span></td><td class="kpi-val">< 12</td><td>On refuse de surpayer. Moins de 12 années de profits pour l'acheter.</td></tr>
-<tr><td><span class="kpi-val">ROE</span></td><td class="kpi-val">> 10%</td><td>La direction doit être compétente pour rentabiliser les capitaux.</td></tr>
+<tr><td><span class="kpi-val">FCF Yield</span></td><td class="kpi-val">Dynamique</td><td>> 5% si mature, > 2.5% si forte croissance (>10%/an).</td></tr>
+<tr><td><span class="kpi-val">PER (P/E)</span></td><td class="kpi-val">< 25</td><td>On accepte de payer la qualité jusqu'à 25x, mais pas au-delà.</td></tr>
+<tr><td><span class="kpi-val">Marge Ops</span></td><td class="kpi-val">> 15%</td><td>Preuve d'un avantage concurrentiel durable (Moat).</td></tr>
 <tr><td><span class="kpi-val">Dette Nette/EBITDA</span></td><td class="kpi-val">< 3.0x</td><td>Capacité à rembourser ses dettes en moins de 3 ans.</td></tr>
 </tbody>
 </table>
 </div>
 """, unsafe_allow_html=True)
 
-# --- STRATÉGIE 2: BEN GRAHAM ---
+# --- STRATÉGIE 2: MODERN GRAHAM (V7.6) ---
 st.markdown("""
 <div class="strat-card">
 <div class="strat-header">
-<div class="strat-title">🛡️ Ben Graham (Deep Value)</div>
+<div class="strat-title">🛡️ Ben Graham (Modern Value)</div>
 <div class="strat-tag tag-value">DÉFENSIF / SÉCURITÉ</div>
 </div>
-<p><strong>Philosophie :</strong> "Acheter 1 € d'actifs pour 0,50 €."</p>
-<p>Inspirée par le mentor de Warren Buffett, cette stratégie est extrêmement défensive. Elle se fiche de la croissance future ; elle regarde ce que l'entreprise possède <strong>aujourd'hui</strong> (usines, stocks, cash).</p>
+<p><strong>Philosophie :</strong> "Sécurité et Solvabilité avant tout."</p>
+<p>Une version modernisée de la stratégie "Deep Value". Nous avons supprimé le ratio P/B (obsolète pour les sociétés de services/tech) et ajouté des critères stricts de solvabilité pour éviter les "pièges de valeur" (entreprises pas chères car en faillite).</p>
 <div class="quote-box">"L'essence de l'investissement est la gestion des risques, pas la gestion des rendements."</div>
 <table class="kpi-table">
 <thead><tr><th>KPI</th><th>Cible</th><th>Pourquoi ?</th></tr></thead>
 <tbody>
-<tr><td><span class="kpi-val">PER</span></td><td class="kpi-val">< 15</td><td>Critère historique strict de Graham pour éviter la survalorisation.</td></tr>
-<tr><td><span class="kpi-val">Price to Book (P/B)</span></td><td class="kpi-val">< 1.5</td><td>Le prix ne doit pas trop dépasser la valeur comptable nette.</td></tr>
-<tr><td><span class="kpi-val">Current Ratio</span></td><td class="kpi-val">> 1.5</td><td>L'entreprise doit avoir 1,5x plus de liquidités que de dettes court terme.</td></tr>
-<tr><td><span class="kpi-val">Dette/Capitaux</span></td><td class="kpi-val">< 50%</td><td>L'entreprise doit être financée par ses propres moyens, pas par la banque.</td></tr>
+<tr><td><span class="kpi-val">PER</span></td><td class="kpi-val">< 15</td><td>Discipline de prix stricte. On ne surpaie jamais.</td></tr>
+<tr><td><span class="kpi-val">Interest Coverage</span></td><td class="kpi-val">> 3.0x</td><td>L'entreprise doit générer 3x plus de profits que ce que lui coûte sa dette.</td></tr>
+<tr><td><span class="kpi-val">ROE</span></td><td class="kpi-val">> 8%</td><td>Minimum vital de rentabilité pour éviter les entreprises "zombies".</td></tr>
+<tr><td><span class="kpi-val">Current Ratio</span></td><td class="kpi-val">> 1.5</td><td>Liquidité immédiate pour payer les factures à court terme.</td></tr>
+<tr><td><span class="kpi-val">Dette/Capitaux</span></td><td class="kpi-val">< 50%</td><td>Structure financière saine, peu dépendante des banques.</td></tr>
 </tbody>
 </table>
 </div>
@@ -123,6 +138,6 @@ st.info("""
 Toutes les stratégies ci-dessus sont filtrées par la couche de conformité suivante :
 1.  **Dette portant intérêts** < 33% de la Capitalisation Boursière.
 2.  **Actifs portant intérêts** (Cash placé) < 33% de la Capitalisation Boursière.
-3.  **Revenus Impurs** (Intérêts, Alcool, Porc, Jeux, etc.) < 5% du Chiffre d'Affaires total.
+3.  **Revenus basés sur Intérêts** (Riba) < 5% du Chiffre d'Affaires total.
 4.  **Vérification Politique** : Exclusion des entreprises listées sur l'API de Boycott.
 """)

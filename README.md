@@ -1,43 +1,51 @@
-# 💸 FinanceBro Terminal
+# ⚖️ Mizan Investments
 
-**FinanceBro** is an "All-in-One" stock analysis dashboard powered by **Streamlit**. It combines the mathematical rigor of Value Investing with the ethical strictness of Islamic Finance.
+**Institutional Grade Asset Intelligence & Ethical Screening.**
+*Analyze. Screen. Dominate.*
 
-Designed for investors who refuse to choose between **Performance** and **Principles**.
+Mizan Investments est un terminal d'analyse financière "Dark Luxury" conçu pour les investisseurs exigeants. Il combine l'analyse fondamentale rigoureuse (Value/Growth) avec un filtrage éthique strict (Shariah Compliant & Boycott Check).
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/Frontend-Streamlit-red)
-![Strategy](https://img.shields.io/badge/Strategy-Value%20%2B%20Shariah-green)
+---
 
-## 🎯 The Dual Strategy
+## 🚀 Fonctionnalités Clés
 
-The agent performs two parallel audits on every stock ticker:
+* **📊 Scanner Fondamental :** Analyse en temps réel via l'API Yahoo Finance.
+* **🕌 Conformité Éthique (Shariah) :**
+    * Dette < 33% de la Capitalisation.
+    * Revenus basés sur Intérêts (Riba) < 5%.
+    * Ratio Liquidité & Actifs Réels.
+    * **Boycott Check :** Vérification automatique via API externe.
+* **🧠 3 Stratégies Algorithmiques :** Moteurs de notation propriétaires (voir ci-dessous).
+* **🎯 Smart Exit Plan :**
+    * Calcul dynamique des cibles de prix (TP1/TP2).
+    * **Mode Hybride :** Bascule automatiquement sur le P/S (Price-to-Sales) si l'entreprise est déficitaire, ou le P/E si elle est rentable.
+    * **Tendance :** Surveillance de la cassure via Moyenne Mobile 50.
+* **🌍 Bilingue :** Interface complète en Anglais et Français.
 
-### 1. 📊 The Financial Audit ("The Bro Strategy")
-Based on Deep Value and Quality Investing principles:
-- **Valuation**: P/E Ratio < 12 (Ideally < 8).
-- **Quality (Moat)**: ROE > 10% and Operating Margin > 14%.
-- **Health**: Working Capital Requirement (WCR) controlled (< 25% of Revenue).
-- **Momentum**: Positive price trend over the last 3 months.
+---
 
-### 2. ☪️ The Shariah Audit ("IFG Standards")
-Strict application of the criteria defined by *Islamic Finance Guru* and *Mufti Taqi Usmani*:
-- **Business Activity**: Manual verification of the sector (via integrated Musaffa link).
-- **Non-Compliant Income**: Interest income must be **< 5%** of Total Revenue.
-- **Interest-Bearing Debt**: Total debt must be **< 33%** of **Total Assets** (not Market Cap).
-- **Real Assets**: Illiquid assets (PPE, Inventory, Intangibles) must represent **> 20%** of Total Assets.
-- **Liquidity**: Net liquid assets (Cash) should not exceed Market Capitalization.
+## 📚 Les Stratégies (Moteurs v7.9)
 
-## 🛠 Quick Installation
+| Stratégie | Profil | Critères Clés (Mis à jour) |
+| :--- | :--- | :--- |
+| **💎 Mizan Strategy** | *Quality Growth* | • **FCF Yield Dynamique** (>2.5% si croissance, >5% sinon)<br>• **P/E < 25** (Qualité à prix raisonnable)<br>• **Marge Ops > 15%** (Avantage concurrentiel) |
+| **🛡️ Modern Graham** | *Safe Value* | • **P/E < 15** (Discipline stricte)<br>• **Interest Coverage > 3x** (Solvabilité)<br>• **ROE > 8%** (Rentabilité minimale)<br>• *Pas de filtre P/B (Obsolète)* |
+| **🚀 Peter Lynch** | *Aggressive Growth* | • **PEG Ratio < 1.0** (La croissance est "gratuite")<br>• **Croissance > 15%**<br>• Dette/Capitaux < 80% |
 
-1. **Clone the repository:**
+---
+
+## 🛠️ Installation & Démarrage
+
    ```bash
-   git clone https://github.com/ahmedblh7/FinanceBro.git
-   cd FinanceBro
+   git clone https://github.com/ahmedblh7/mizan-investments.git
+   cd mizan-investments
+   pip install -r requirements.txt
+
 
 python -m venv venv
 venv\Scripts\activate
 streamlit run app.py
 
 git add .
-git commit -m "Description de ce que j'ai changé"
+git commit -m "Update"
 git push
