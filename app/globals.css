@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
+/* ── Base ── */
+body {
+  background-color: #0b0e13;
+  color: #c8cdd5;
+}
+
+/* ── Subtle ambient glow ── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 30% 0%, rgba(0, 224, 150, 0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 100%, rgba(224, 195, 140, 0.02) 0%, transparent 50%),
+    #0b0e13;
+}
+
+/* ── Custom scrollbar ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(0, 224, 150, 0.2);
+  color: white;
+}

@@ -1,0 +1,6 @@
+{
+  "/api/analyze/route": "app/api/analyze/route.js",
+  "/page": "app/page.js",
+  "/api/search/route": "app/api/search/route.js",
+  "/api/price-history/route": "app/api/price-history/route.js"
+}
